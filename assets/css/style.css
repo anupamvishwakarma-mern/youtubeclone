@@ -1,0 +1,256 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #131313 !important;
+  min-height: 100vh;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+header{
+  background-color: #131313;
+  padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+header .header-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .header-left{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+header .header-left .fa-bars{
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.header-middle {
+  width: 50%;
+}
+
+.header-row .header-middle form{
+  display: flex;
+  height: fit-content;
+}
+
+.header-row .header-middle form button,
+.header-row .header-middle form input{
+  height: fit-content;
+}
+
+.header-row .header-middle form .search{
+  border: 1px solid rgb(63, 63, 63);
+  background-color: rgb(58, 58, 58);
+  width: 12%;
+}
+
+.header-row .header-middle form .search i{
+  font-size: 20px;
+}
+
+.header-row .header-middle form input{
+  padding-left: 20px;
+  background-color: transparent;
+  color: #d8d8d8;
+  border: 1px solid rgb(63, 63, 63);
+}
+
+.header-middle form input::placeholder{
+  color: gray;
+}
+
+header .header-row .header-middle form .mic{
+  padding: 4px 10px;
+  height: fit-content;
+  border-radius: 50%;
+  background-color: rgb(80, 80, 80);
+  color: #fff;
+}
+
+.header-middle form .mic:hover{
+  background-color: rgb(99, 99, 99) !important;
+}
+
+header .header-row .header-middle form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+header .header-row .header-middle form .input-group{
+  margin-bottom: 0;
+}
+
+.header-right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.header-right .fa-bell{
+  font-size: 20px;
+  color: #a5a4a4;
+}
+.header-right .user{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.header-right .user img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.header-right .create{
+  width: 35px;
+  height: 35px;
+}
+
+.header-right .create img{
+  width: 100%;
+}
+
+
+main{
+  min-height: 100vh;
+  padding-top: 65px;
+  display: flex;
+}
+
+main .sidebar{
+  position: fixed;
+  z-index: 9;
+  height: 89%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 10px 20px;
+}
+
+main .sidebar::-webkit-scrollbar{
+  background-color: #000;
+  width: 8px;
+}
+
+main .sidebar::-webkit-scrollbar-button{
+  background-color: #d8d8d8;
+  height: 5px;
+}
+main .sidebar::-webkit-scrollbar-thumb{
+  background-color: #d8d8d8;
+  border-radius: 30px;
+}
+
+main .sidebar icon-shape{
+  display: flex;
+  width: 25px;
+}
+
+main .sidebar .nav-link{
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  align-items: center;
+}
+
+.nav-pills .nav-link.active{
+  background-color: #1f1f1f !important;
+}
+
+hr{
+  color: #fff !important;
+}
+
+main .sidebar2{
+  padding: 10px 5px;
+
+}
+
+main .sidebar2 .nav{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+main .sidebar2 .nav-link{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 0 10px;
+  gap: 5px;
+  font-size: 10px;
+}
+
+main .sidebar .nav-link:hover{
+  background-color: #1f1f1f;
+}
+
+main .content{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+main .content .cards{
+  width: calc(100%/3);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 10px;
+}
+
+main .content .cards .top{
+  width: calc(100%);
+  cursor: pointer;
+  height: 60%;
+}
+
+main .content .cards .top img{
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+}
+
+main .content .cards .bottom{
+  display: flex;
+  gap: 7px;
+  cursor: pointer;
+}
+
+.content .cards .bottom .profile-icon img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.content .cards .bottom .title h3{
+  font-size: 18px;
+  color: #e7e6e6;
+}
+
+.content .cards .bottom .title span{
+  color: #a5a4a4;
+}
+
+a{
+  text-decoration: none !important;
+}
